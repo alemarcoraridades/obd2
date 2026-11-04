@@ -1,0 +1,158 @@
+/* Typography System - AleMarco Raridades */
+
+/* Ensure fonts are loaded from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@300;400;600;700&display=swap');
+
+/* Base typography styles */
+html {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+/* Heading styles using DM Serif Display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: '"DM Serif Display"', Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* Body text styles using Lato */
+p {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Utility classes for typography */
+.font-title {
+  font-family: '"DM Serif Display"', Georgia, serif;
+  font-weight: 600;
+}
+
+.font-subtitle {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-card-title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.font-description {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-section-title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.font-button {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Classes de cores baseadas no sistema de design */
+.bg-theme-background { background-color: #F4F1ED; }
+.bg-theme-card { background-color: #1E3A8A; }
+.bg-theme-primary { background-color: #295C7A; }
+.bg-theme-secondary { background-color: #F7A600; }
+.bg-theme-success { background-color: #4CAF50; }
+.bg-theme-error { background-color: #D32F2F; }
+.bg-theme-alert { background-color: #FFF3CD; }
+
+.text-theme-primary { color: #295C7A; }
+.text-theme-secondary { color: #F7A600; }
+.text-theme-text { color: #2C2C2C; }
+.text-theme-text-secondary { color: #7A7A7A; }
+.text-theme-success { color: #4CAF50; }
+.text-theme-error { color: #D32F2F; }
+.text-theme-alert { color: #856404; }
+
+.border-theme-primary { border-color: #295C7A; }
+.border-theme-secondary { border-color: #F7A600; }
+.border-theme-muted { border-color: #E5E7EB; }
+
+/* Gradientes personalizados */
+.bg-gradient-primary-secondary {
+  background: linear-gradient(135deg, #295C7A 0%, #F7A600 100%);
+}
+
+.text-gradient-primary-secondary {
+  background: linear-gradient(135deg, #295C7A 0%, #F7A600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Ensure text rendering is smooth */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsividade para tipografia */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
