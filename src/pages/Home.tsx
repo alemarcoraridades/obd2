@@ -158,7 +158,7 @@ export default function Home() {
             <div className="visual-kicker"><span className="status-dot" /> INTERFACE DO APP</div>
             <div className="app-screen-frame">
               <img
-                src="/public/app.png"
+                src="/app.png"
                 alt="Tela do AleMarco OBD2 exibindo dados do veículo e códigos de falha"
                 className="app-screen-image"
               />
